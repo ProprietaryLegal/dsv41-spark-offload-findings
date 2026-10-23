@@ -1,0 +1,16 @@
+PLI Labs — dsv41-spark-offload-findings
+Copyright 2026 Proprietary Legal Intelligence LLC
+
+PLI Labs round-trip tools and exact-ceiling analysis snapshot are distributed
+under Apache-2.0. The code directory contains round-trip C++/shell tools,
+historical tool notes, the exact scorer, and aggregate JSON. No vendored upstream
+source, patch set, or third-party LICENSE, NOTICE, or COPYING file was found.
+
+The C++ loopback includes ofl.h and links libofl, obtained separately from the
+ofl transport component (Apache-2.0). System C/C++ headers/libraries, PyTorch,
+safetensors, and the method capture reader are external dependencies, not
+vendored distributions. Model tensors and reference dumps are external private
+inputs; no model weights, captures, prompts or tokens are redistributed here.
+
+The complete Apache-2.0 licence for the PLI Labs material in this package is
+in LICENSES/Apache-2.0.txt. External dependencies are not redistributed here.
