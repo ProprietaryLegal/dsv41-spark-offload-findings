@@ -179,7 +179,7 @@ Exact probabilities do not eliminate finite-sample uncertainty. The captured dra
 
 ### 9. Open qualification
 
-KV page packing and larger context remain in progress. Offline allocator arithmetic and worker-level high-position parity are not end-to-end GB10 correctness or performance results; no result is published here for these candidates. Prefix storage has CPU/network prototype evidence, with real restore/rank synchronization and engine integration still open.
+KV page packing validated on GB10 at 327,680 (production promotion pending); 524,288 serves correctly but is held for a prefill regression under investigation. 1M was not tested on GB10 in this window. Prefix storage has CPU/network prototype evidence, with real restore/rank synchronization and engine integration still open.
 
 Independent review found that a waiting request unable to obtain KV could prevent useful admitted work indefinitely. The prefill-ordering fix is implemented and CPU-tested; fresh independent review and GB10 validation are pending. Earlier favorable simulation does not establish a serving improvement.
 
