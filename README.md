@@ -1,8 +1,8 @@
 # DeepSeek-V4.1-Flash DGX Spark / GB10 and x86 RTX 3090 offload: measured findings
 
-These findings explain the costs, failures and limits of moving Engram lookups and speculative drafting off two DGX Spark nodes. The tables distinguish direct measurements, offline analysis, and engineering estimates. The [full-stack overview](https://github.com/ProprietaryLegal/DeepSeek-V4.1-Flash-2xDGX-Spark-x86-offload) supplies architecture and the baseline comparison.
+These findings explain the costs, failures and limits of moving Engram lookups and speculative drafting off two DGX Spark nodes. The tables distinguish direct measurements, offline analysis, and engineering estimates. The [DGX sPLIce full-stack overview](https://github.com/ProprietaryLegal/DGX-sPLIce-DeepSeek-V4.1-Flash-2xDGX-Spark-2xRTX3090-drafter-x86-offload) supplies architecture and the baseline comparison.
 
-**Hugging Face:** [Card and files](https://huggingface.co/ProprietaryLegal/dsv41-spark-offload-findings) · **Stack overview:** [GitHub](https://github.com/ProprietaryLegal/DeepSeek-V4.1-Flash-2xDGX-Spark-x86-offload) · **Collection:** [All entries](https://huggingface.co/collections/ProprietaryLegal/deepseek-v41-flash-on-2x-dgx-spark-x86-offload-6adab604a517b426ded3916e)
+**Hugging Face:** [Card and files](https://huggingface.co/ProprietaryLegal/dsv41-spark-offload-findings) · **DGX sPLIce:** [GitHub](https://github.com/ProprietaryLegal/DGX-sPLIce-DeepSeek-V4.1-Flash-2xDGX-Spark-2xRTX3090-drafter-x86-offload) · **Collection:** [All entries](https://huggingface.co/collections/ProprietaryLegal/deepseek-v41-flash-on-2x-dgx-spark-x86-offload-6adab604a517b426ded3916e)
 
 <!-- pli:blurb:start -->
 
@@ -200,7 +200,7 @@ DeepSeek describes model support for the larger context window; worker support a
 
 ## Deploy
 
-This findings repository installs no engine overlay. For a serving deployment, follow the [overview](https://github.com/ProprietaryLegal/DeepSeek-V4.1-Flash-2xDGX-Spark-x86-offload) and individual component instructions.
+This findings repository installs no engine overlay. For a serving deployment, follow the [overview](https://github.com/ProprietaryLegal/DGX-sPLIce-DeepSeek-V4.1-Flash-2xDGX-Spark-2xRTX3090-drafter-x86-offload) and individual component instructions.
 
 For local analysis, use the [complete exact-ceiling repository](https://github.com/ProprietaryLegal/dsv41-exact-acceptance-ceiling), which includes the capture reader and lens tool absent from this smaller copy. The included exact scorer is an archival source/aggregate snapshot; its data paths and external inputs must be supplied explicitly.
 
@@ -249,7 +249,7 @@ PLI Labs integration and analysis code is Apache-2.0. Credits: DeepSeek for the 
 - `dsv41-native-1017-drafter-sm86`: [GitHub](https://github.com/ProprietaryLegal/dsv41-native-1017-drafter-sm86) · [Hugging Face](https://huggingface.co/ProprietaryLegal/dsv41-native-1017-drafter-sm86).
 - `dsv41-longctx-bench-tools`: [GitHub](https://github.com/ProprietaryLegal/dsv41-longctx-bench-tools) · [Hugging Face](https://huggingface.co/ProprietaryLegal/dsv41-longctx-bench-tools).
 - `dsv41-exact-acceptance-ceiling`: [GitHub](https://github.com/ProprietaryLegal/dsv41-exact-acceptance-ceiling) · [Hugging Face](https://huggingface.co/ProprietaryLegal/dsv41-exact-acceptance-ceiling).
-- `DeepSeek-V4.1-Flash-2xDGX-Spark-x86-offload`: [GitHub](https://github.com/ProprietaryLegal/DeepSeek-V4.1-Flash-2xDGX-Spark-x86-offload) · [Hugging Face](https://huggingface.co/ProprietaryLegal/DeepSeek-V4.1-Flash-2xDGX-Spark-x86-offload).
+- DGX sPLIce: [GitHub](https://github.com/ProprietaryLegal/DGX-sPLIce-DeepSeek-V4.1-Flash-2xDGX-Spark-2xRTX3090-drafter-x86-offload) · [Hugging Face](https://huggingface.co/ProprietaryLegal/DeepSeek-V4.1-Flash-2xDGX-Spark-x86-offload).
 - `dsv41-spark-offload-findings`: [GitHub](https://github.com/ProprietaryLegal/dsv41-spark-offload-findings) · [Hugging Face](https://huggingface.co/ProprietaryLegal/dsv41-spark-offload-findings).
 
 Upstream forks: [Spark image and offload integration](https://github.com/ProprietaryLegal/deepseek-v41-1017-dgx-spark) · [two-node launcher](https://github.com/ProprietaryLegal/dgx-spark-deepseek-v41). [HF collection](https://huggingface.co/collections/ProprietaryLegal/deepseek-v41-flash-on-2x-dgx-spark-x86-offload-6adab604a517b426ded3916e) · [hub snapshot](https://github.com/ProprietaryLegal/pli-labs/tree/main/research/dgx-spark-offload).
